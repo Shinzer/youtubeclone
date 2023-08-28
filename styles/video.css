@@ -1,0 +1,117 @@
+.thumbnail{
+  width: 100%;
+  cursor: pointer;
+  
+}
+
+.videotitle{
+  font-weight: 500;
+  margin-top: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.author,
+.stats{
+  font-size: 12px;
+  color:#696767;
+}
+
+.author{
+  margin-bottom: 4px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.info{
+  width: 200px;
+}
+
+
+.channelpic{
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.channelpic .username{
+  font-family: Roboto,Arial;
+  font-weight: bold;
+}
+
+.channelpic .subs{
+  font-family: Roboto,Arial;
+  font-size: 12px ;
+}
+
+.channeltooltip{
+  display: flex;
+  position: absolute;
+  background-color: rgb(255, 251, 251);
+  padding: 4px;
+  border-radius: 2px;
+  bottom: -35px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px rgb(128, 125, 125);
+}
+
+
+
+.channelpic:hover .channeltooltip{
+  opacity: 1;
+}
+
+
+.profilepic{
+  width: 36px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.thumbnailrow{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.vidgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width:1000px){
+  .vidgrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:700px){
+  .vidgrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.video-time{
+  font-family: Roboto,Arial;
+  background-color: black;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 2px;
+}
